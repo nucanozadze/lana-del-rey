@@ -6,31 +6,50 @@
 import random
 crew_leaders = ['Kruashvili', 'amiranashvili', 'tyeshelashvili', 'janezashvili', 'molodini', 'kereselidze', 'kurtanidze']
 
-print(crew_leaders[4])
-print(crew_leaders[random.randint(0,6)])
-print(crew_leaders[random.randint(0,6)])
-for i in range(1,4):
-    print('winner N',i,'is',random.choice(crew_leaders))
+random1 = random.choice(crew_leaders)
+random2 = random.choice(crew_leaders)
+random3 = random.choice(crew_leaders)
+
+
+print(random1)
+print(random2)
+print(random3)
 
 
 #2
 
 crew_members = ['Nozadze', 'janashia','Motiahvili','Tsamalaidze','Katsarava','Mgeladze','Jatchvadze','Gogadze','Gelashvili','Wiklauri','Egvipte','Bochorishvili','Oqropiridze','Gochitashvili','Chochia']
-choice = random.choice(crew_members)
-choice2 = (choice + ' ' + ' is cool<3')
-print(crew_members[4])
-print(crew_members[random.randint(0,6)])
-print(crew_members[random.randint(0,6)])
-for i in range(1,4):
-    print('winner N',i,'is',random.choice(crew_members) + " is cool <3")
-    
+
+for i in range (3):
+    Random = random.choice(crew_members)
+    print(Random + " studies hard")
+
 
 #3
+
 crew_members = ['Nozadze', 'janashia','Motiahvili','Tsamalaidze','Katsarava','Mgeladze','Jatchvadze','Gogadze','Gelashvili','Wiklauri','Egvipte','Bochorishvili','Oqropiridze','Gochitashvili','Chochia']
-#ამას ვერ მივხვდი როგორ გავაკეთო<3
+
+random1 = random.choice(crew_members)
+random2 = random.choice(crew_members)
+random3 = random.choice(crew_members)
 
 
+if random1[-1] == "i":
+    print(random1 + " is cool<3")
+    print(random2)
+    print(random3)
 
+elif random2[-1] == "i":
+    print(random1)
+    print(random2 + " is cool<3")
+    print(random3)
 
+elif random3[-1] == "i":
+    print(random1)
+    print(random2)
+    print(random3 + " is cool<3")
 
-
+else:
+    print(random1)
+    print(random2)
+    print(random3)
